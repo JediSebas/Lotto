@@ -10,11 +10,11 @@
         android:id="@+id/nr1tV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="100dp"
-        android:text="Nr1"
-        app:layout_constraintEnd_toStartOf="@+id/nr2tV"
+        android:text="@string/nr1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,173 +22,171 @@
         android:id="@+id/nr2tV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:text="Nr2"
-        app:layout_constraintStart_toEndOf="@+id/nr1tV"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/nr2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr1tV" />
 
     <TextView
         android:id="@+id/nr3tV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:text="Nr3"
-        app:layout_constraintStart_toEndOf="@+id/nr2tV"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/nr3"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr2tV" />
 
     <TextView
         android:id="@+id/nr4tV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:text="Nr4"
-        app:layout_constraintStart_toEndOf="@+id/nr3tV"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/nr4"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr3tV" />
 
     <TextView
         android:id="@+id/nr5tV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:text="Nr5"
-        app:layout_constraintStart_toEndOf="@+id/nr4tV"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/nr5"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr4tV" />
 
     <TextView
         android:id="@+id/nr6tV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="10dp"
-        android:text="Nr6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nr5tV"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/nr6"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr5tV" />
 
     <Button
         android:id="@+id/losujBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="122dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginTop="40dp"
         android:onClick="losuj"
-        android:text="Losuj"
-        app:layout_constraintBottom_toTopOf="@+id/nr2eT"
+        android:text="@string/los"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nr2tV" />
-
-    <Button
-        android:id="@+id/sprawdzBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="106dp"
-        android:layout_marginTop="122dp"
-        android:layout_marginBottom="94dp"
-        android:onClick="sprawdz"
-        android:text="Sprawdz"
-        app:layout_constraintBottom_toTopOf="@+id/nr3eT"
-        app:layout_constraintStart_toEndOf="@+id/losujBtn"
-        app:layout_constraintTop_toBottomOf="@+id/nr3tV" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/nr1eT"
         android:layout_width="39dp"
         android:layout_height="45dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/sprawdzBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="sprawdz"
+        android:text="@string/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/losujBtn" />
 
     <EditText
         android:id="@+id/nr2eT"
-        android:layout_width="38dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nr1eT" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr1eT" />
 
     <EditText
         android:id="@+id/nr3eT"
-        android:layout_width="41dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nr2eT" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr2eT" />
 
     <EditText
         android:id="@+id/nr4eT"
-        android:layout_width="43dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="83dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nr3eT" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr3eT" />
 
     <EditText
         android:id="@+id/nr5eT"
         android:layout_width="39dp"
         android:layout_height="48dp"
-        android:layout_marginStart="109dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nr4eT" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nr4eT" />
 
     <EditText
         android:id="@+id/nr6eT"
-        android:layout_width="44dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="40dp"
+        android:layout_width="39dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/nr5eT" />
+        app:layout_constraintTop_toBottomOf="@+id/nr5eT" />
 
     <TextView
         android:id="@+id/traftV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="122dp"
-        android:layout_marginEnd="69dp"
-        android:layout_marginBottom="105dp"
-        android:text="trafienia: "
-        app:layout_constraintBottom_toTopOf="@+id/nr6eT"
+        android:layout_marginTop="72dp"
+        android:text="@string/traf"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nr6tV" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/czyscBtn" />
 
     <Button
         android:id="@+id/czyscBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="121dp"
-        android:layout_marginTop="122dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="94dp"
+        android:layout_marginTop="50dp"
         android:onClick="czysc"
-        android:text="czysc"
-        app:layout_constraintBottom_toTopOf="@+id/nr5eT"
-        app:layout_constraintEnd_toStartOf="@+id/traftV"
-        app:layout_constraintStart_toEndOf="@+id/sprawdzBtn"
-        app:layout_constraintTop_toBottomOf="@+id/nr5tV" />
+        android:text="@string/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sprawdzBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

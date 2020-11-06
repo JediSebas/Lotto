@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Lotto</string>
+    <string name="nr1">Nr1</string>
+    <string name="nr2">Nr2</string>
+    <string name="nr3">Nr3</string>
+    <string name="nr4">Nr4</string>
+    <string name="nr5">Nr5</string>
+    <string name="nr6">Nr6</string>
+    <string name="clear">czyść</string>
+    <string name="traf">"trafienia: "</string>
+    <string name="los">losuj</string>
+    <string name="check">sprawdź</string>
 </resources>

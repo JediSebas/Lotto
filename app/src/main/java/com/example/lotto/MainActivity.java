@@ -2,6 +2,7 @@ package com.example.lotto;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -66,10 +67,20 @@ public class MainActivity extends AppCompatActivity {
     }
     void ettonum(){
         for (int i=0; i < 6; i++) {
-            etbufor = et[i];
-            sbuff = etbufor.getText().toString().trim();
-            ibuf = Integer.parseInt(sbuff);
-            number[i] = ibuf;
+            try {
+                etbufor = et[i];
+                sbuff = etbufor.getText().toString().trim();
+                ibuf = Integer.parseInt(sbuff);
+                number[i] = ibuf;
+            }catch (NumberFormatException e){
+                et[i].setText("0");
+            }
+            finally {
+                etbufor = et[i];
+                sbuff = etbufor.getText().toString().trim();
+                ibuf = Integer.parseInt(sbuff);
+                number[i] = ibuf;
+            }
         }
     }
     int check(int[] a, int[] b){
@@ -84,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         return x;
     }
 
+        @SuppressLint("SetTextI18n")
         public void sprawdz (View view){
         try {
             rantotv();
